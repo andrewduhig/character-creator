@@ -3,11 +3,19 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
+.maxWidthWrapper::before {
+  content: " ";
+  width: 100%;
+  height: 40%;
+  position: fixed;
+  background-color: hsl(195deg, 20%, 86%);
+  bottom: 0;
+  left: 0;
 }
 
 .header {
   padding-bottom: 64px;
+  max-width: 65%;
 }
 
 .title {
@@ -24,7 +32,40 @@
 }
 
 .characterWrapper {
+  position: fixed;
+  top: 100px;
+  left: 65%;
 }
 
-.controlColumn {
+@media screen and (max-width: 700px) {
+  .characterEditor {
+    padding-top: 40px;
+    min-height: 100%;
+  }
+  .header {
+    max-width: 100%;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .controlColumn {
+    white-space: nowrap;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  .characterWrapper {
+    position: absolute;
+    left: 30%;
+    z-index: 1;
+  }
+  .controlColumn {
+    z-index: 5;
+    padding-left: 32px;
+    padding-right: 12px;
+  }
 }

@@ -1,2 +1,9 @@
 .buttonRow {
+    white-space: nowrap;
+    overflow-y: auto;
+}
+@media screen and (max-width: 700px) {
+    .buttonRow {
+        overflow-y: initial;
+    }
 }
