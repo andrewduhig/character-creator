@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 700px) {
   .characterEditor {
-    padding-top: 40px;
+    padding-top: 2em;
     min-height: 100%;
   }
   .header {
@@ -60,12 +60,15 @@
   }
   .characterWrapper {
     position: absolute;
-    left: 30%;
+    left: 26vw;
+    top: 32vh;
     z-index: 1;
   }
   .controlColumn {
+    position: absolute;
+    bottom: 2em;
     z-index: 5;
-    padding-left: 32px;
-    padding-right: 12px;
+    padding-left: 1em;
+    padding-right: 0;
   }
 }
